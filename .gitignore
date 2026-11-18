@@ -1,0 +1,52 @@
+# ---------- Quartus / Qsys 编译产物 ----------
+db/
+incremental_db/
+greybox_tmp/
+.qsys_edit/
+*.qws.bak
+*.done
+*.qpf.bak
+
+# output_files 中保留 .sof/.pin 等最终结果，忽略中间报告
+output_files/*.rpt
+output_files/*.summary
+output_files/*.smsg
+output_files/*.jdi
+output_files/*.html
+output_files/*.xml
+output_files/*.ddb
+output_files/*.hier_info
+output_files/*.cdb
+output_files/*.cmp
+output_files/*.flow.rpt
+
+# ---------- ModelSim 仿真编译产物 ----------
+simulation/modelsim/work/
+simulation/modelsim/*.vo
+simulation/modelsim/*.sdo
+simulation/modelsim/*.vho
+simulation/modelsim/transcript
+simulation/modelsim/vsim.wlf
+simulation/modelsim/*.wlf
+simulation/modelsim/*.wlf.wav
+simulation/modelsim/modelsim.ini
+simulation/modelsim/*.mpf.bak
+
+# ---------- Nios II / Eclipse (EDS) 工程产物 ----------
+software/.metadata/
+software/**/Debug/
+software/**/Release/
+software/**/obj/
+software/**/*.elf
+software/**/*.obj
+software/**/*.d
+software/**/*.o
+software/**/*.map
+software/RemoteSystemsTempFiles/
+
+# ---------- 备份与临时文件 ----------
+*.bak
+*.tmp
+*~
+Thumbs.db
+desktop.ini
